@@ -8,6 +8,7 @@ UDHCPC_DIR=/usr/share/udhcpc
 
 echo "${YELLOW}Installing udhcpc${SET}"
 apt install udhcpc
+apt install busybox
 echo "denyinterfaces wwan0" >> /etc/dhcpcd.conf
 systemctl daemon-reload
 systemctl restart dhcpcd
