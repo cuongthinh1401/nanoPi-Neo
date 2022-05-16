@@ -30,4 +30,5 @@ systemctl daemon-reload
 systemctl enable qmi_connect.service
 systemctl start qmi_connect.service
 
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 echo "done"
